@@ -38,3 +38,38 @@ Tests the application for bugs, usability, performance, and security. Ensures a 
 - **Redis**: Used for caching and session management.
 - **Docker**: Containerization tool for consistent development and deployment environments.
 - **CI/CD Pipelines**: Automated pipelines for testing and deploying code changes.
+
+
+## Database Design
+### key entities required for the projectkey entities required for the project
+- **Users**
+        FIELDS - Name- This is the users name
+                -booking_id - These are the booking_id that the user has curretly made or have been offered to them
+                -user_id - Users special identifier
+                -Password - user's PIN
+                -property_id - This is a special identifier for the property that the user currently owns(Single user can own multiple properties)
+                -PropName - Name of the property that the user currently owns
+- **Property**
+        FIELDS  -PropName - name of the property
+                -booking_id - booking_id made to the property 
+                -property_id- Property's special identifier
+                -user_id - Owner of the property (But still a user can have many properties)
+- **booking_id**
+        FIELDS  -property_id - Id of the property that has been booked 
+                -user_id - ID of the individual who has mabe the booking
+                -Price - The price hat will be charged for the booking
+                -booking_id
+- **Payments**
+        FIELDS  -booking_id - The booking that was made
+                -Price - The price that was charged 
+                -user_id - ID of the individual to be charged 
+                -Password - password of the individualto be charged
+- **Reviews**
+        FIELDS  -booking_id
+                -review_id-
+                -user_id
+                -Password
+                -Price
+                -PropName
+                -property_id
+    
