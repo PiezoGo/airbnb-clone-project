@@ -155,7 +155,7 @@ Why: Enables quick response to abnormal or suspicious behavior.
 CI/CD (Continuous Integration and Continuous Deployment) pipelines are automated workflows that help streamline the process of building, testing, and deploying code. In the Airbnb Clone project, CI/CD ensures that changes made to the backend are automatically tested and deployed without manual intervention, enhancing both development speed and deployment reliability.
 
 ### Why CI/CD is Important for This Project
- **Automated Testing**: Ensures each code change (e.g., booking system update, new user feature) is automatically tested to prevent bugs.
+**Automated Testing**: Ensures each code change (e.g., booking system update, new user feature) is automatically tested to prevent bugs.
 **Rapid Deployment**: Speeds up the release of new features like payment integration or review system updates.
 **Improved Collaboration**: Multiple team members (backend developers, QA, DevOps) can push code without fear of conflicts or breaking the app.
 **Reliable Rollbacks**: In case of issues, previous working versions can be restored quickly.
