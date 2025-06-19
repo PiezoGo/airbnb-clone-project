@@ -76,7 +76,7 @@ Tests the application for bugs, usability, performance, and security. Ensures a 
                 -rating: Numeric rating (e.g., 1 to 5)
                 -comment: Written feedback
 
-        Entity Relationships
+   Entity Relationships
 A User can own many Properties (One-to-Many)
 A User can make many Bookings (One-to-Many)
 A Property can have many Bookings (One-to-Many)
